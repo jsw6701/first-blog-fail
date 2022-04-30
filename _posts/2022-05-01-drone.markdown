@@ -1,0 +1,8 @@
+---
+layout: post
+title: '[DJI] 테스트'
+subtitle: 'dji drone test'
+categories: drone
+tags: dji
+comments: true
+---
