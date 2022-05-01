@@ -64,4 +64,5 @@ comments: true
 
 ---
 
-<script src="https://gist.github.com/jsw6701/6c1a9441ae890138a7328bbf61dc54c8.js"></script>
+
+{% gist 6c1a9441ae890138a7328bbf61dc54c8 %}
