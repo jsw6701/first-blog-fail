@@ -63,6 +63,25 @@ comments: true
 다른 좋은 방법이 많이 있는 것 같지만 내가 푼 방법은 이렇게 간단하게 끝이 났다.
 
 ---
+> 코드
 
+```java
+import java.util.Scanner;
 
-{% gist 6c1a9441ae890138a7328bbf61dc54c8 %}
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+
+        for(int i = 2; i <= N; i++){
+            if(N % i == 0){ //N을 2부터 N까지 나누는 도중 나눠질경우
+                N /= i; //N을 i로 나누고 남은 수를 N에 넣기
+                System.out.println(i); // N을 나눈 수 출력
+                i--; // 만약 2로 더 나눠지는데도 3으로 가버려서 다시 2로 돌아감
+            }
+        }
+    }
+}
+```
